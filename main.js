@@ -96,5 +96,10 @@ posts.forEach(post => {
     });
     container.innerHTML = card;
 
-    let dataGirata = posts.created;
-    console.log(dataGirata);
+    
+reverse();
+function reverse(){
+    posts.forEach((date) =>{
+        date.created = date.created.split('').reverse().join('');
+    })
+};
